@@ -1,0 +1,1748 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Source File: C:\Clients\CG33\Colleges\Work\C_GTFS_reseau_20121403\routes.txt -->
+<!-- Number of Records: 145 -->
+<!-- Created with: CSVed 1.4.4, at: 30/11/2012 09:51:02 -->
+<!-- Start of the body -->
+<lignes source="C:\Clients\CG33\Colleges\Work\C_GTFS_reseau_20121403\routes.txt">
+   <ligne>
+      <route_id>210xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>210</route_short_name>
+      <route_long_name>ST ANDRE DE CUBZAC   LARUSCADE - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>210xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>210</route_short_name>
+      <route_long_name>ST ANDRE DE CUBZAC   LARUSCADE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>211xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>211</route_short_name>
+      <route_long_name>BLAYE   ST CIERS SUR GIRONDE - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>211xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>211</route_short_name>
+      <route_long_name>BLAYE   ST CIERS SUR GIRONDE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>301xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>301</route_short_name>
+      <route_long_name>BORDEAUX BUTTINIERE   LIBOURNE par ST LO - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>301xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>301</route_short_name>
+      <route_long_name>BORDEAUX BUTTINIERE   LIBOURNE par ST LO - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>3011xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>3011</route_short_name>
+      <route_long_name>RENFORT BORDEAUX BUTT.    LIBOURNE par S - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>3011xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>3011</route_short_name>
+      <route_long_name>RENFORT BORDEAUX BUTT.    LIBOURNE par S - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>302xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>302</route_short_name>
+      <route_long_name>BORDEAUX BUTTINIERE   LIBOURNE par RN 89 - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>302xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>302</route_short_name>
+      <route_long_name>BORDEAUX BUTTINIERE   LIBOURNE par RN 89 - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>3021xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>3021</route_short_name>
+      <route_long_name>RENFORT BORDEAUX BUTT.   LIBOURNE  RN89 - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>3021xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>3021</route_short_name>
+      <route_long_name>RENFORT BORDEAUX BUTT.   LIBOURNE  RN89 - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>303xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>303</route_short_name>
+      <route_long_name>BORDEAUX BUTT.   BEYCHAC ET CAILLEAU - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>303xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>303</route_short_name>
+      <route_long_name>BORDEAUX BUTT.   BEYCHAC ET CAILLEAU - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>310xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>310</route_short_name>
+      <route_long_name>LIBOURNE   ST ANDRE DE C. - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>310xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>310</route_short_name>
+      <route_long_name>LIBOURNE   ST ANDRE DE C. - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>311xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>311</route_short_name>
+      <route_long_name>LIBOURNE   MONTGUYON - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>311xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>311</route_short_name>
+      <route_long_name>LIBOURNE   MONTGUYON - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>312xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>312</route_short_name>
+      <route_long_name>LIBOURNE   MONTPON MENESTEROL - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>312xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>312</route_short_name>
+      <route_long_name>LIBOURNE   MONTPON MENESTEROL - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>313xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>313</route_short_name>
+      <route_long_name>LIBOURNE   VILLEFRANCHE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>313xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>313</route_short_name>
+      <route_long_name>LIBOURNE   VILLEFRANCHE - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>3141xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>3141</route_short_name>
+      <route_long_name>RENFORT LIBOURNE   PUISSEGUIN - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>3141xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>3141</route_short_name>
+      <route_long_name>RENFORT LIBOURNE   PUISSEGUIN - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>315xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>315</route_short_name>
+      <route_long_name>LIBOURNE   FRANCS - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>315xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>315</route_short_name>
+      <route_long_name>LIBOURNE   FRANCS - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>3151xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>3151</route_short_name>
+      <route_long_name>RENFORT LIBOURNE   FRANCS - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>3151xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>3151</route_short_name>
+      <route_long_name>RENFORT LIBOURNE   FRANCS - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>316xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>316</route_short_name>
+      <route_long_name>LIBOURNE   PELLEGRUE - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>316xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>316</route_short_name>
+      <route_long_name>LIBOURNE   PELLEGRUE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>3161xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>3161</route_short_name>
+      <route_long_name>RENFORT LIBOURNE   PELLEGRUE - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>3161xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>3161</route_short_name>
+      <route_long_name>RENFORT LIBOURNE   PELLEGRUE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>317xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>317</route_short_name>
+      <route_long_name>LIBOURNE   SAUVETERRE - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>317xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>317</route_short_name>
+      <route_long_name>LIBOURNE   SAUVETERRE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>3171xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>3171</route_short_name>
+      <route_long_name>RENFORT LIBOURNE   SAUVETERRE - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>3171xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>3171</route_short_name>
+      <route_long_name>RENFORT LIBOURNE   SAUVETERRE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>318xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>318</route_short_name>
+      <route_long_name>LIBOURNE   ST GERMAIN DU PUCH - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>318xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>318</route_short_name>
+      <route_long_name>LIBOURNE   ST GERMAIN DU PUCH - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>319xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>319</route_short_name>
+      <route_long_name>LIBOURNE   LAPOUYADE - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>319xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>319</route_short_name>
+      <route_long_name>LIBOURNE   LAPOUYADE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>381xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>381</route_short_name>
+      <route_long_name>ETS ST ANDRE DE CUBZAC - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>381xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>381</route_short_name>
+      <route_long_name>ETS ST ANDRE DE CUBZAC - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>383xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>383</route_short_name>
+      <route_long_name>COLL. VERAC - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>383xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>383</route_short_name>
+      <route_long_name>COLL. VERAC - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>384xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>384</route_short_name>
+      <route_long_name>COLL. COUTRAS - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>384xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>384</route_short_name>
+      <route_long_name>COLL. COUTRAS - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>401xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>401</route_short_name>
+      <route_long_name>BORDEAUX BUTTIN.   BRANNE par SALLEBOEUF - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>401xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>401</route_short_name>
+      <route_long_name>BORDEAUX BUTTIN.   BRANNE par SALLEBOEUF - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>4011xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>4011</route_short_name>
+      <route_long_name>RENFORT BORDEAUX BUTT.   BRANNE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>402xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>402</route_short_name>
+      <route_long_name>BORDEAUX STALINGRAD  BRANNE par CAMARSAC - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>402xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>402</route_short_name>
+      <route_long_name>BORDEAUX STALINGRAD  BRANNE par CAMARSAC - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>4021xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>4021</route_short_name>
+      <route_long_name>RENFORT BORDEAUX BUTTINIERE   BRANNE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>4021xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>4021</route_short_name>
+      <route_long_name>RENFORT BORDEAUX BUTTINIERE   BRANNE - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>403xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>403</route_short_name>
+      <route_long_name>BORDEAUX STALINGRAD  SAUVETERRE  TARGON - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>403xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>403</route_short_name>
+      <route_long_name>BORDEAUX STALINGRAD  SAUVETERRE  TARGON - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>4031xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>4031</route_short_name>
+      <route_long_name>RENFORT BORDEAUX STALINGRAD   TARGON - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>4031xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>4031</route_short_name>
+      <route_long_name>RENFORT BORDEAUX STALINGRAD   TARGON - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>404xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>404</route_short_name>
+      <route_long_name>BORDEAUX STALINGRAD   CREON - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>404xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>404</route_short_name>
+      <route_long_name>BORDEAUX STALINGRAD   CREON - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>4041xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>4041</route_short_name>
+      <route_long_name>RENFORT BORDEAUX STALING.   CREON - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>4041xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>4041</route_short_name>
+      <route_long_name>RENFORT BORDEAUX STALING.   CREON - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>405xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>405</route_short_name>
+      <route_long_name>BORDEAUX STALINGRAD   TABANAC - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>405xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>405</route_short_name>
+      <route_long_name>BORDEAUX STALINGRAD   TABANAC - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>4051xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>4051</route_short_name>
+      <route_long_name>RENFORT BORDEAUX STALING.   TABANAC - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>4051xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>4051</route_short_name>
+      <route_long_name>RENFORT BORDEAUX STALING.   TABANAC - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>501xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>501</route_short_name>
+      <route_long_name>BORDEAUX STALINGRAD   LANGON  CADILLAC - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>501xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>501</route_short_name>
+      <route_long_name>BORDEAUX STALINGRAD   LANGON  CADILLAC - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>5011xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>5011</route_short_name>
+      <route_long_name>RENFORT BORDEAUX STALING.   LANGON - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>5011xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>5011</route_short_name>
+      <route_long_name>RENFORT BORDEAUX STALING.   LANGON - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>502xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>502</route_short_name>
+      <route_long_name>BORDEAUX PEIXOTTO   LA BREDE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>502xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>502</route_short_name>
+      <route_long_name>BORDEAUX PEIXOTTO   LA BREDE - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>503xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>503</route_short_name>
+      <route_long_name>BORDEAUX PEIXOTTO   ST SYMPHORIEN - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>503xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>503</route_short_name>
+      <route_long_name>BORDEAUX PEIXOTTO   ST SYMPHORIEN - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>504xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>504</route_short_name>
+      <route_long_name>BORDEAUX PEIXOTTO   HOSTENS - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>504xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>504</route_short_name>
+      <route_long_name>BORDEAUX PEIXOTTO   HOSTENS - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>505xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>505</route_short_name>
+      <route_long_name>BORDEAUX PEIXOTTO   BELIN BELIET - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>505xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>505</route_short_name>
+      <route_long_name>BORDEAUX PEIXOTTO   BELIN BELIET - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>5051xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>5051</route_short_name>
+      <route_long_name>RENFORT BORDEAUX   BELIN BELIET - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>5051xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>5051</route_short_name>
+      <route_long_name>RENFORT BORDEAUX   BELIN BELIET - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>510xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>510</route_short_name>
+      <route_long_name>SAUVETERRE   LA REOLE   MONSEGUR - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>510xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>510</route_short_name>
+      <route_long_name>SAUVETERRE   LA REOLE   MONSEGUR - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>511xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>511</route_short_name>
+      <route_long_name>LANGON   GRIGNOLS - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>511xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>511</route_short_name>
+      <route_long_name>LANGON   GRIGNOLS - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>512xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>512</route_short_name>
+      <route_long_name>LANGON   CAPTIEUX - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>512xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>512</route_short_name>
+      <route_long_name>LANGON   CAPTIEUX - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>513xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>513</route_short_name>
+      <route_long_name>MARCHEPRIME   LE BARP - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>513xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>513</route_short_name>
+      <route_long_name>MARCHEPRIME   LE BARP - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>581xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>581</route_short_name>
+      <route_long_name>COLL. LATRESNE - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>581xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>581</route_short_name>
+      <route_long_name>COLL. LATRESNE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>582xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>582</route_short_name>
+      <route_long_name>COLL. CADILLAC - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>582xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>582</route_short_name>
+      <route_long_name>COLL. CADILLAC - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>583xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>583</route_short_name>
+      <route_long_name>COLL. MONSEGUR   PELLEGRUE - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>583xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>583</route_short_name>
+      <route_long_name>COLL. MONSEGUR   PELLEGRUE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>601xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>601</route_short_name>
+      <route_long_name>BORDEAUX   LEGE CAP FERRET OCEAN - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>601xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>601</route_short_name>
+      <route_long_name>BORDEAUX   LEGE CAP FERRET OCEAN - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>6011xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>6011</route_short_name>
+      <route_long_name>RENFORT BORDEAUX   LEGE - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>6011xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>6011</route_short_name>
+      <route_long_name>RENFORT BORDEAUX   LEGE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>602xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>602</route_short_name>
+      <route_long_name>BORDEAUX UNITEC   CANEJAN   CESTAS - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>602xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>602</route_short_name>
+      <route_long_name>BORDEAUX UNITEC   CANEJAN   CESTAS - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>603xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>603</route_short_name>
+      <route_long_name>MERIGNAC   MARTIGNAS - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>603xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>603</route_short_name>
+      <route_long_name>MERIGNAC   MARTIGNAS - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>6031xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>6031</route_short_name>
+      <route_long_name>RENFORT MERIGNAC   MARTIGNAS - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>6031xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>6031</route_short_name>
+      <route_long_name>RENFORT MERIGNAC   MARTIGNAS - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>610xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>610</route_short_name>
+      <route_long_name>BELIN BELIET   BIGANOS   ANDERNOS - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>610xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>610</route_short_name>
+      <route_long_name>BELIN BELIET   BIGANOS   ANDERNOS - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>682xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>682</route_short_name>
+      <route_long_name>ETS ANDERNOS - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>682xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>682</route_short_name>
+      <route_long_name>ETS ANDERNOS - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>683xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>683</route_short_name>
+      <route_long_name>LYCEES PESSAC - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>683xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>683</route_short_name>
+      <route_long_name>LYCEES PESSAC - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>684xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>684</route_short_name>
+      <route_long_name>COLL. LE TEICH - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>684xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>684</route_short_name>
+      <route_long_name>COLL. LE TEICH - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>701xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>701</route_short_name>
+      <route_long_name>BORDEAUX   LE PORGE - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>701xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>701</route_short_name>
+      <route_long_name>BORDEAUX   LE PORGE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>702xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>702</route_short_name>
+      <route_long_name>BORDEAUX   LACANAU - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>702xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>702</route_short_name>
+      <route_long_name>BORDEAUX   LACANAU - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>7021xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>7021</route_short_name>
+      <route_long_name>RENFORT BORDEAUX   LACANAU - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>7021xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>7021</route_short_name>
+      <route_long_name>RENFORT BORDEAUX   LACANAU - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>7031xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>7031</route_short_name>
+      <route_long_name>RENFORT BORDEAUX   LESPARRE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>704xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>704</route_short_name>
+      <route_long_name>BORDEAUX RAVEZIES    ARSAC - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>704xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>704</route_short_name>
+      <route_long_name>BORDEAUX RAVEZIES    ARSAC - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>705xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>705</route_short_name>
+      <route_long_name>BORDEAUX RAVEZIES   PAUILLAC - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>705xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>705</route_short_name>
+      <route_long_name>BORDEAUX RAVEZIES   PAUILLAC - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>7051xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>7051</route_short_name>
+      <route_long_name>RENFORT BORDEAUX RAVEZIES   PAUILLAC - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>706xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>706</route_short_name>
+      <route_long_name>BORDEAUX RAVEZIES   MACAU - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>706xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>706</route_short_name>
+      <route_long_name>BORDEAUX RAVEZIES   MACAU - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>7061xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>7061</route_short_name>
+      <route_long_name>RENFORT BORDEAUX RAVEZIES   MACAU - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>7061xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>7061</route_short_name>
+      <route_long_name>RENFORT BORDEAUX RAVEZIES   MACAU - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>710xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>710</route_short_name>
+      <route_long_name>SAINTE HELENE   CARCANS - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>710xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>710</route_short_name>
+      <route_long_name>SAINTE HELENE   CARCANS - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>711xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>711</route_short_name>
+      <route_long_name>LESPARRE   HOURTIN - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>711xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>711</route_short_name>
+      <route_long_name>LESPARRE   HOURTIN - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>712xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>712</route_short_name>
+      <route_long_name>LESPARRE   GRAYAN par VENDAYS - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>712xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>712</route_short_name>
+      <route_long_name>LESPARRE   GRAYAN par VENDAYS - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>713xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>713</route_short_name>
+      <route_long_name>LESPARRE   POINTE DE GRAVE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>713xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>713</route_short_name>
+      <route_long_name>LESPARRE   POINTE DE GRAVE - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>7131xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>7131</route_short_name>
+      <route_long_name>RENFORT LESPARRE   POINTE DE GRAVE - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>7131xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>7131</route_short_name>
+      <route_long_name>RENFORT LESPARRE   POINTE DE GRAVE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>782xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>782</route_short_name>
+      <route_long_name>COLL. ARSAC - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>782xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>782</route_short_name>
+      <route_long_name>COLL. ARSAC - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>783xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>783</route_short_name>
+      <route_long_name>ETS BLANQUEFORT   ST MEDARD   PAREMPUYRE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>783xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>783</route_short_name>
+      <route_long_name>ETS BLANQUEFORT   ST MEDARD   PAREMPUYRE - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>784xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>784</route_short_name>
+      <route_long_name>ETS LESPARRE - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>784xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>784</route_short_name>
+      <route_long_name>ETS LESPARRE - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>785xR</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>785</route_short_name>
+      <route_long_name>ETS PAUILLAC - Retour</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+   <ligne>
+      <route_id>785xA</route_id>
+      <agency_id>1</agency_id>
+      <route_short_name>785</route_short_name>
+      <route_long_name>ETS PAUILLAC - Aller</route_long_name>
+      <route_desc>_</route_desc>
+      <route_type>3</route_type>
+      <route_url>_</route_url>
+      <route_color>FFFFFF</route_color>
+      <route_text_color>000000</route_text_color>
+   </ligne>
+
+</lignes>
+<!-- End of the body -->

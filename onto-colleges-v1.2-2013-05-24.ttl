@@ -1,0 +1,3466 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://data.datalocale.fr/org#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://data.datalocale.fr/org> .
+
+<http://data.datalocale.fr/org> rdf:type owl:Ontology ;
+                               
+                               rdfs:label "Vocabulaire de description des collèges et équipements - Extension du modèle BPE INSEE"@fr ;
+                               
+                               <http://purl.org/dc/elements/1.1/date> "2013-05-24"^^xsd:date .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+<http://purl.org/dc/elements/1.1/language> rdf:type owl:AnnotationProperty .
+
+
+
+rdfs:isDefinedBy rdf:type owl:AnnotationProperty .
+
+
+
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+###  http://www.w3.org/2001/XMLSchema#date
+
+xsd:date rdf:type rdfs:Datatype .
+
+
+
+###  http://www.w3.org/2001/XMLSchema#gYear
+
+xsd:gYear rdf:type rdfs:Datatype .
+
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://purl.org/dc/terms/source
+
+<http://purl.org/dc/terms/source> rdf:type owl:ObjectProperty .
+
+
+
+###  http://purl.org/dc/terms/type
+
+<http://purl.org/dc/terms/type> rdf:type owl:ObjectProperty ;
+                                
+                                rdfs:label "type"@fr .
+
+
+
+###  http://rdf.insee.fr/def/territoire/bpe#caractereAbsent
+
+<http://rdf.insee.fr/def/territoire/bpe#caractereAbsent> rdf:type owl:ObjectProperty ;
+                                                         
+                                                         rdfs:label "caractère absent"@fr ;
+                                                         
+                                                         rdfs:comment "Indique que l'équipement sujet ne possède pas le caractère en objet" ;
+                                                         
+                                                         rdfs:isDefinedBy <http://rdf.insee.fr/def/territoire/bpe> ;
+                                                         
+                                                         rdfs:range <http://rdf.insee.fr/def/territoire/bpe#Caractere> ;
+                                                         
+                                                         rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#Equipement> ;
+                                                         
+                                                         owl:propertyDisjointWith <http://rdf.insee.fr/def/territoire/bpe#caracterePresent> .
+
+
+
+###  http://rdf.insee.fr/def/territoire/bpe#caractereApplicable
+
+<http://rdf.insee.fr/def/territoire/bpe#caractereApplicable> rdf:type owl:ObjectProperty ;
+                                                             
+                                                             rdfs:label "caractère applicable"@fr ;
+                                                             
+                                                             rdfs:comment "Indique que le caractère objet est applicable pour le type d'équipement sujet" ;
+                                                             
+                                                             rdfs:range <http://rdf.insee.fr/def/territoire/bpe#Caractere> ;
+                                                             
+                                                             rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#TypeEquipement> ;
+                                                             
+                                                             rdfs:subPropertyOf skos:related .
+
+
+
+###  http://rdf.insee.fr/def/territoire/bpe#caracterePresent
+
+<http://rdf.insee.fr/def/territoire/bpe#caracterePresent> rdf:type owl:ObjectProperty ;
+                                                          
+                                                          rdfs:label "caractère présent"@fr ;
+                                                          
+                                                          rdfs:comment "Indique que l'équipement sujet possède le caractère en objet" ;
+                                                          
+                                                          rdfs:isDefinedBy <http://rdf.insee.fr/def/territoire/bpe> ;
+                                                          
+                                                          rdfs:range <http://rdf.insee.fr/def/territoire/bpe#Caractere> ;
+                                                          
+                                                          rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#Equipement> .
+
+
+
+###  http://rdf.insee.fr/def/territoire/bpe#secteurEquipementScolaire
+
+<http://rdf.insee.fr/def/territoire/bpe#secteurEquipementScolaire> rdf:type owl:ObjectProperty ;
+                                                                   
+                                                                   rdfs:label "secteur"@fr ;
+                                                                   
+                                                                   rdfs:isDefinedBy <http://rdf.insee.fr/def/territoire/bpe> ;
+                                                                   
+                                                                   rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#EquipementScolaire> ;
+                                                                   
+                                                                   rdfs:range <http://rdf.insee.fr/def/territoire/bpe#Secteur> .
+
+
+
+###  http://data.datalocale.fr/org#activitePratiquee
+
+:activitePratiquee rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "activité pratiquée"@fr ;
+                   
+                   rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#EquipementSportLoisir> ;
+                   
+                   rdfs:range :Activite .
+
+
+
+###  http://data.datalocale.fr/org#adjoint
+
+:adjoint rdf:type owl:ObjectProperty ;
+         
+         rdfs:label "adjoint"@fr ;
+         
+         rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#EquipementScolaire> ;
+         
+         rdfs:range <http://xmlns.com/foaf/0.1/Person> .
+
+
+
+###  http://data.datalocale.fr/org#arret
+
+:arret rdf:type owl:ObjectProperty ;
+       
+       rdfs:label "arrêt assuré"@fr ;
+       
+       rdfs:domain <http://vocab.org/transit/terms/Service> ;
+       
+       rdfs:range <http://vocab.org/transit/terms/Stop> .
+
+
+
+###  http://data.datalocale.fr/org#chefEtablissement
+
+:chefEtablissement rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "chef d'établissement"@fr ;
+                   
+                   rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#EquipementScolaire> ;
+                   
+                   rdfs:range <http://xmlns.com/foaf/0.1/Person> .
+
+
+
+###  http://data.datalocale.fr/org#classReference
+
+:classReference rdf:type owl:ObjectProperty ;
+                
+                rdfs:label "classe de référence"@fr ;
+                
+                rdfs:comment "Une classe du modèle (type d'entité) dont le référent est responsable dans les données de référence"@fr ;
+                
+                rdfs:domain :DataReference ;
+                
+                rdfs:range owl:Class .
+
+
+
+###  http://data.datalocale.fr/org#effectifMesure
+
+:effectifMesure rdf:type owl:ObjectProperty ;
+                
+                rdfs:label "effectif"@fr ;
+                
+                rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#EquipementScolaire> ;
+                
+                rdfs:range :Effectif .
+
+
+
+###  http://data.datalocale.fr/org#effectifType
+
+:effectifType rdf:type owl:FunctionalProperty ,
+                       owl:ObjectProperty ;
+              
+              rdfs:label "type d'effectif"@fr ;
+              
+              rdfs:domain :Effectif ;
+              
+              rdfs:range :TypeEffectif .
+
+
+
+###  http://data.datalocale.fr/org#gestionnaire
+
+:gestionnaire rdf:type owl:ObjectProperty ;
+              
+              rdfs:label "gestionnaire"@fr ;
+              
+              rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#EquipementScolaire> ;
+              
+              rdfs:range <http://xmlns.com/foaf/0.1/Person> .
+
+
+
+###  http://data.datalocale.fr/org#gestionnaireEquipement
+
+:gestionnaireEquipement rdf:type owl:ObjectProperty ;
+                        
+                        rdfs:label "gestionnaire de l'équipement"@fr ;
+                        
+                        rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#Equipement> ;
+                        
+                        rdfs:range <http://xmlns.com/foaf/0.1/Organization> .
+
+
+
+###  http://data.datalocale.fr/org#hasSEGPA
+
+:hasSEGPA rdf:type owl:FunctionalProperty ,
+                   owl:ObjectProperty ;
+          
+          rdfs:label "SEGPA rattachée"@fr ;
+          
+          rdfs:domain :College ;
+          
+          rdfs:range :SEGPA .
+
+
+
+###  http://data.datalocale.fr/org#propertyReference
+
+:propertyReference rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "propriété de référence"@fr ;
+                   
+                   rdfs:comment "Une propriété (champ de données) dont le référent est responsable pour les données de référence"@fr ;
+                   
+                   rdfs:domain :DataReference ;
+                   
+                   rdfs:range rdf:Property .
+
+
+
+###  http://data.datalocale.fr/org#proprietaireEquipement
+
+:proprietaireEquipement rdf:type owl:ObjectProperty ;
+                        
+                        rdfs:label "propriétaire de l'équipement"@fr ;
+                        
+                        rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#Equipement> ;
+                        
+                        rdfs:range <http://xmlns.com/foaf/0.1/Organization> .
+
+
+
+###  http://data.datalocale.fr/org#referenceClass
+
+:referenceClass rdf:type owl:ObjectProperty .
+
+
+
+###  http://data.datalocale.fr/org#referenceData
+
+:referenceData rdf:type owl:ObjectProperty ;
+               
+               rdfs:label "données de référence"@fr ;
+               
+               rdfs:comment "Données dont le référent est responsable"@fr ;
+               
+               rdfs:range <http://rdfs.org/ns/void#Dataset> ;
+               
+               rdfs:domain :DataReference .
+
+
+
+###  http://data.datalocale.fr/org#referent
+
+:referent rdf:type owl:ObjectProperty ;
+          
+          rdfs:label "référent"@fr ;
+          
+          rdfs:domain :DataReference ;
+          
+          rdfs:range <http://xmlns.com/foaf/0.1/Agent> .
+
+
+
+###  http://data.datalocale.fr/org#trajet
+
+:trajet rdf:type owl:ObjectProperty ;
+        
+        rdfs:label "trajet de la ligne"@fr ;
+        
+        rdfs:domain :Ligne ;
+        
+        rdfs:range <http://vocab.org/transit/terms/Route> .
+
+
+
+###  http://vocab.org/transit/terms/agency
+
+<http://vocab.org/transit/terms/agency> rdf:type owl:ObjectProperty ;
+                                        
+                                        rdfs:label "compagnie"@en ;
+                                        
+                                        rdfs:comment "The agency that operates this public transportation route."@en ;
+                                        
+                                        rdfs:isDefinedBy <http://vocab.org/transit/terms/> ;
+                                        
+                                        rdfs:range <http://vocab.org/transit/terms/Agency> ;
+                                        
+                                        rdfs:domain <http://vocab.org/transit/terms/Route> .
+
+
+
+###  http://vocab.org/transit/terms/routeService
+
+<http://vocab.org/transit/terms/routeService> rdf:type owl:ObjectProperty ;
+                                              
+                                              rdfs:label "service assuré"@fr ;
+                                              
+                                              rdfs:comment "A service that operates on this route."@en ;
+                                              
+                                              rdfs:isDefinedBy <http://vocab.org/transit/terms/> ;
+                                              
+                                              rdfs:domain <http://vocab.org/transit/terms/Route> ;
+                                              
+                                              rdfs:range <http://vocab.org/transit/terms/Service> .
+
+
+
+###  http://vocab.org/transit/terms/routeStop
+
+<http://vocab.org/transit/terms/routeStop> rdf:type owl:ObjectProperty ;
+                                           
+                                           rdfs:label "arrêt sur le trajet"@fr ;
+                                           
+                                           rdfs:comment "Links a route to a particular stop and the sequence of that stop in the route."@en ;
+                                           
+                                           rdfs:isDefinedBy <http://vocab.org/transit/terms/> ;
+                                           
+                                           rdfs:domain <http://vocab.org/transit/terms/Route> ;
+                                           
+                                           rdfs:range <http://vocab.org/transit/terms/Stop> .
+
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isComponentOf
+
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isComponentOf> rdf:type owl:ObjectProperty ;
+                                                                      
+                                                                      rdfs:label "composant de"@fr .
+
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+
+owl:topObjectProperty rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#location
+
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+
+skos:broader rdf:type owl:ObjectProperty ;
+             
+             rdfs:label "concept générique"@fr .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+
+skos:inScheme rdf:type owl:ObjectProperty ;
+              
+              rdfs:label "élément de la structure"@fr .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+
+skos:narrower rdf:type owl:ObjectProperty ;
+              
+              rdfs:label "concept spécifique"@fr .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+
+skos:note rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#related
+
+skos:related rdf:type owl:ObjectProperty ;
+             
+             rdfs:label "concept associé"@fr .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://eurovoc.europa.eu/schema#noteLiteral
+
+<http://eurovoc.europa.eu/schema#noteLiteral> rdf:type owl:DatatypeProperty ;
+                                              
+                                              rdfs:domain <http://purl.org/ontology/bibo/Note> .
+
+
+
+###  http://rdf.insee.fr/def/territoire/bpe#anneeDescription
+
+<http://rdf.insee.fr/def/territoire/bpe#anneeDescription> rdf:type owl:DatatypeProperty ;
+                                                          
+                                                          rdfs:label "année de description"@fr ;
+                                                          
+                                                          rdfs:comment "Année de validité des éléments de description de l'équipement" ;
+                                                          
+                                                          rdfs:isDefinedBy <http://rdf.insee.fr/def/territoire/bpe> ;
+                                                          
+                                                          rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#Equipement> ;
+                                                          
+                                                          rdfs:range xsd:gYear .
+
+
+
+###  http://rdf.insee.fr/def/territoire/bpe#coordonneesLambertX
+
+<http://rdf.insee.fr/def/territoire/bpe#coordonneesLambertX> rdf:type owl:DatatypeProperty ;
+                                                             
+                                                             rdfs:label "coordonnées Lambert X"@fr ;
+                                                             
+                                                             rdfs:isDefinedBy <http://rdf.insee.fr/def/territoire/bpe> ;
+                                                             
+                                                             rdfs:range xsd:float ;
+                                                             
+                                                             rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+
+
+
+###  http://rdf.insee.fr/def/territoire/bpe#coordonneesLambertY
+
+<http://rdf.insee.fr/def/territoire/bpe#coordonneesLambertY> rdf:type owl:DatatypeProperty ;
+                                                             
+                                                             rdfs:label "coordonnées Lambert Y"@fr ;
+                                                             
+                                                             rdfs:isDefinedBy <http://rdf.insee.fr/def/territoire/bpe> ;
+                                                             
+                                                             rdfs:range xsd:float ;
+                                                             
+                                                             rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+
+
+
+###  http://rdf.insee.fr/geo/codeCommune
+
+<http://rdf.insee.fr/geo/codeCommune> rdf:type owl:DatatypeProperty ,
+                                               owl:FunctionalProperty ;
+                                      
+                                      rdfs:label "code Commune"@fr ;
+                                      
+                                      rdfs:domain <http://rdf.insee.fr/def/geo#Commune> ;
+                                      
+                                      rdfs:subPropertyOf <http://rdf.insee.fr/geo/codeINSEE> .
+
+
+
+###  http://rdf.insee.fr/geo/codeINSEE
+
+<http://rdf.insee.fr/geo/codeINSEE> rdf:type owl:DatatypeProperty ,
+                                             owl:FunctionalProperty ;
+                                    
+                                    rdfs:label "code INSEE"@fr .
+
+
+
+###  http://schemas.talis.com/2005/address/schema#localityName
+
+<http://schemas.talis.com/2005/address/schema#localityName> rdf:type owl:DatatypeProperty ;
+                                                            
+                                                            rdfs:label "localité"@fr ;
+                                                            
+                                                            rdfs:domain [ rdf:type owl:Class ;
+                                                                          owl:unionOf ( <http://rdf.insee.fr/def/territoire/bpe#Equipement>
+                                                                                        <http://xmlns.com/foaf/0.1/Organization>
+                                                                                      )
+                                                                        ] .
+
+
+
+###  http://schemas.talis.com/2005/address/schema#postalCode
+
+<http://schemas.talis.com/2005/address/schema#postalCode> rdf:type owl:DatatypeProperty ;
+                                                          
+                                                          rdfs:label "code postal"@fr ;
+                                                          
+                                                          rdfs:domain [ rdf:type owl:Class ;
+                                                                        owl:unionOf ( <http://rdf.insee.fr/def/territoire/bpe#Equipement>
+                                                                                      <http://xmlns.com/foaf/0.1/Organization>
+                                                                                    )
+                                                                      ] .
+
+
+
+###  http://schemas.talis.com/2005/address/schema#streetAddress
+
+<http://schemas.talis.com/2005/address/schema#streetAddress> rdf:type owl:DatatypeProperty ;
+                                                             
+                                                             rdfs:label "adresse rue"@fr ;
+                                                             
+                                                             rdfs:domain [ rdf:type owl:Class ;
+                                                                           owl:unionOf ( <http://rdf.insee.fr/def/territoire/bpe#Equipement>
+                                                                                         <http://xmlns.com/foaf/0.1/Organization>
+                                                                                       )
+                                                                         ] .
+
+
+
+###  http://data.datalocale.fr/org#RNE-SEGPA
+
+:RNE-SEGPA rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           
+           rdfs:label "RNE SEGPA"@fr ;
+           
+           rdfs:domain :SEGPA .
+
+
+
+###  http://data.datalocale.fr/org#RRS
+
+:RRS rdf:type owl:DatatypeProperty ;
+     
+     rdfs:label "RRS"@fr ;
+     
+     rdfs:domain :College ;
+     
+     rdfs:range xsd:boolean .
+
+
+
+###  http://data.datalocale.fr/org#UAI
+
+:UAI rdf:type owl:DatatypeProperty ,
+              owl:FunctionalProperty ;
+     
+     rdfs:label "UAI"@fr .
+
+
+
+###  http://data.datalocale.fr/org#adresseL5
+
+:adresseL5 rdf:type owl:DatatypeProperty ;
+           
+           rdfs:label "complément d'adresse"@fr ;
+           
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( <http://rdf.insee.fr/def/territoire/bpe#Equipement>
+                                       <http://xmlns.com/foaf/0.1/Organization>
+                                     )
+                       ] .
+
+
+
+###  http://data.datalocale.fr/org#anneeEffectif
+
+:anneeEffectif rdf:type owl:DatatypeProperty ;
+               
+               rdfs:label "année"@fr ;
+               
+               rdfs:domain :Effectif ;
+               
+               rdfs:range xsd:gYear .
+
+
+
+###  http://data.datalocale.fr/org#capaciteTheorique
+
+:capaciteTheorique rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   
+                   rdfs:label "capacité théorique"@fr ;
+                   
+                   rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#EquipementScolaire> ;
+                   
+                   rdfs:range xsd:positiveInteger .
+
+
+
+###  http://data.datalocale.fr/org#dateMAJ
+
+:dateMAJ rdf:type owl:DatatypeProperty ;
+         
+         rdfs:label "date de mise à jour"@fr ;
+         
+         rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#Equipement> .
+
+
+
+###  http://data.datalocale.fr/org#dateOuverture
+
+:dateOuverture rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               
+               rdfs:label "date d'ouverture"@fr ;
+               
+               rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#Equipement> ;
+               
+               rdfs:range xsd:date .
+
+
+
+###  http://data.datalocale.fr/org#effectifValeur
+
+:effectifValeur rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                
+                rdfs:label "valeur effectif"@fr ;
+                
+                rdfs:domain :Effectif ;
+                
+                rdfs:range xsd:positiveInteger .
+
+
+
+###  http://data.datalocale.fr/org#fax
+
+:fax rdf:type owl:DatatypeProperty ;
+     
+     rdfs:label "fax"@fr ;
+     
+     rdfs:domain [ rdf:type owl:Class ;
+                   owl:unionOf ( <http://rdf.insee.fr/def/territoire/bpe#Equipement>
+                                 <http://xmlns.com/foaf/0.1/Organization>
+                               )
+                 ] .
+
+
+
+###  http://data.datalocale.fr/org#mail
+
+:mail rdf:type owl:DatatypeProperty ;
+      
+      rdfs:label "adresse e-mail"@fr ;
+      
+      rdfs:domain [ rdf:type owl:Class ;
+                    owl:unionOf ( <http://rdf.insee.fr/def/territoire/bpe#Equipement>
+                                  <http://xmlns.com/foaf/0.1/Organization>
+                                )
+                  ] .
+
+
+
+###  http://data.datalocale.fr/org#nbClassesOuvertes
+
+:nbClassesOuvertes rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   
+                   rdfs:label "nombre de classes ouvertes"@fr ;
+                   
+                   rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#EquipementScolaire> ;
+                   
+                   rdfs:range xsd:positiveInteger .
+
+
+
+###  http://data.datalocale.fr/org#nbZAP
+
+:nbZAP rdf:type owl:DatatypeProperty ;
+       
+       rdfs:label "numéro ZAP"@fr ;
+       
+       rdfs:domain :College .
+
+
+
+###  http://data.datalocale.fr/org#nomCourt
+
+:nomCourt rdf:type owl:DatatypeProperty ;
+          
+          rdfs:label "nom court"@fr ;
+          
+          rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#Equipement> .
+
+
+
+###  http://data.datalocale.fr/org#nomLong
+
+:nomLong rdf:type owl:DatatypeProperty ;
+         
+         rdfs:label "nom long"@fr ;
+         
+         rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#Equipement> .
+
+
+
+###  http://data.datalocale.fr/org#numSecteur
+
+:numSecteur rdf:type owl:DatatypeProperty ;
+            
+            rdfs:label "numéro de secteur"@fr ;
+            
+            rdfs:domain :College .
+
+
+
+###  http://data.datalocale.fr/org#referenceDate
+
+:referenceDate rdf:type owl:DatatypeProperty ;
+               
+               rdfs:label "date de référence"@fr ;
+               
+               rdfs:domain :DataReference .
+
+
+
+###  http://data.datalocale.fr/org#surfaceBati
+
+:surfaceBati rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             
+             rdfs:label "surface bâtie"@fr ;
+             
+             rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#EquipementScolaire> ;
+             
+             rdfs:range xsd:positiveInteger .
+
+
+
+###  http://data.datalocale.fr/org#surfaceNonBati
+
+:surfaceNonBati rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                
+                rdfs:label "surface non bâtie"@fr ;
+                
+                rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#EquipementScolaire> ;
+                
+                rdfs:range xsd:positiveInteger .
+
+
+
+###  http://data.datalocale.fr/org#telephone
+
+:telephone rdf:type owl:DatatypeProperty ;
+           
+           rdfs:label "téléphone"@fr ;
+           
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( <http://rdf.insee.fr/def/territoire/bpe#Equipement>
+                                       <http://xmlns.com/foaf/0.1/Organization>
+                                     )
+                       ] .
+
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#lat
+
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> rdf:type owl:DatatypeProperty ;
+                                              
+                                              rdfs:label "latitude"@fr ;
+                                              
+                                              rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#long
+
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> rdf:type owl:DatatypeProperty ;
+                                               
+                                               rdfs:label "longitude"@fr ;
+                                               
+                                               rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+
+skos:altLabel rdf:type owl:DatatypeProperty ;
+              
+              rdfs:domain skos:Concept .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+
+skos:notation rdf:type owl:DatatypeProperty ;
+              
+              rdfs:domain skos:Concept .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+
+skos:prefLabel rdf:type owl:DatatypeProperty ;
+               
+               rdfs:domain skos:Concept .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://purl.org/ontology/bibo/Note
+
+<http://purl.org/ontology/bibo/Note> rdf:type owl:Class ;
+                                     
+                                     rdfs:label "Note"@fr .
+
+
+
+###  http://rdf.insee.fr/def/geo#Commune
+
+<http://rdf.insee.fr/def/geo#Commune> rdf:type owl:Class ;
+                                      
+                                      rdfs:label "Commune"@fr ;
+                                      
+                                      rdfs:subClassOf <http://rdf.insee.fr/def/geo#TerritoireAdministratif> ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://rdf.insee.fr/geo/codeCommune> ;
+                                                        owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                      ] .
+
+
+
+###  http://rdf.insee.fr/def/geo#IRIS
+
+<http://rdf.insee.fr/def/geo#IRIS> rdf:type owl:Class ;
+                                   
+                                   rdfs:label "IRIS"@fr ;
+                                   
+                                   rdfs:subClassOf <http://rdf.insee.fr/def/geo#TerritoireStatistique> .
+
+
+
+###  http://rdf.insee.fr/def/geo#TerritoireAdministratif
+
+<http://rdf.insee.fr/def/geo#TerritoireAdministratif> rdf:type owl:Class ;
+                                                      
+                                                      rdfs:label "Territoire administratif"@fr ;
+                                                      
+                                                      rdfs:subClassOf <http://rdf.insee.fr/def/geo#TerritoireFrancais> .
+
+
+
+###  http://rdf.insee.fr/def/geo#TerritoireFrancais
+
+<http://rdf.insee.fr/def/geo#TerritoireFrancais> rdf:type owl:Class ;
+                                                 
+                                                 rdfs:label "Territoire français"@fr ;
+                                                 
+                                                 rdfs:subClassOf <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+
+
+
+###  http://rdf.insee.fr/def/geo#TerritoireStatistique
+
+<http://rdf.insee.fr/def/geo#TerritoireStatistique> rdf:type owl:Class ;
+                                                    
+                                                    rdfs:label "Territoire statistique"@fr ;
+                                                    
+                                                    rdfs:subClassOf <http://rdf.insee.fr/def/geo#TerritoireFrancais> .
+
+
+
+###  http://rdf.insee.fr/def/territoire/bpe#Caractere
+
+<http://rdf.insee.fr/def/territoire/bpe#Caractere> rdf:type owl:Class ;
+                                                   
+                                                   rdfs:label "Caractère"@fr ;
+                                                   
+                                                   rdfs:subClassOf skos:Concept ;
+                                                   
+                                                   rdfs:isDefinedBy <http://rdf.insee.fr/def/territoire/bpe> .
+
+
+
+###  http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire
+
+<http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> rdf:type owl:Class ;
+                                                           
+                                                           rdfs:label "Caractère d'équipement scolaire"@fr ;
+                                                           
+                                                           rdfs:subClassOf <http://rdf.insee.fr/def/territoire/bpe#Caractere> ;
+                                                           
+                                                           rdfs:isDefinedBy <http://rdf.insee.fr/def/territoire/bpe> .
+
+
+
+###  http://rdf.insee.fr/def/territoire/bpe#CaractereSportLoisir
+
+<http://rdf.insee.fr/def/territoire/bpe#CaractereSportLoisir> rdf:type owl:Class ;
+                                                              
+                                                              rdfs:label "Caractère d'équipement sport-loisir"@fr ;
+                                                              
+                                                              rdfs:subClassOf <http://rdf.insee.fr/def/territoire/bpe#Caractere> ;
+                                                              
+                                                              rdfs:isDefinedBy <http://rdf.insee.fr/def/territoire/bpe> .
+
+
+
+###  http://rdf.insee.fr/def/territoire/bpe#Equipement
+
+<http://rdf.insee.fr/def/territoire/bpe#Equipement> rdf:type owl:Class ;
+                                                    
+                                                    rdfs:label "Equipement"@fr ;
+                                                    
+                                                    rdfs:subClassOf <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <http://purl.org/dc/terms/type> ;
+                                                                      owl:allValuesFrom <http://rdf.insee.fr/def/territoire/bpe#TypeEquipement>
+                                                                    ] ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <http://rdf.insee.fr/def/territoire/bpe#coordonneesLambertX> ;
+                                                                      owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                    ] ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <http://rdf.insee.fr/def/territoire/bpe#coordonneesLambertY> ;
+                                                                      owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                    ] ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isComponentOf> ;
+                                                                      owl:allValuesFrom <http://rdf.insee.fr/def/territoire/bpe#Equipement>
+                                                                    ] ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <http://www.w3.org/2003/01/geo/wgs84_pos#location> ;
+                                                                      owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                           owl:unionOf ( <http://rdf.insee.fr/def/geo#Commune>
+                                                                                                         <http://rdf.insee.fr/def/geo#IRIS>
+                                                                                                       )
+                                                                                         ]
+                                                                    ] ;
+                                                    
+                                                    rdfs:isDefinedBy <http://rdf.insee.fr/def/territoire/bpe> .
+
+
+
+###  http://rdf.insee.fr/def/territoire/bpe#EquipementScolaire
+
+<http://rdf.insee.fr/def/territoire/bpe#EquipementScolaire> rdf:type owl:Class ;
+                                                            
+                                                            rdfs:label "Equipement scolaire"@fr ;
+                                                            
+                                                            rdfs:subClassOf <http://rdf.insee.fr/def/territoire/bpe#Equipement> ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://rdf.insee.fr/def/territoire/bpe#caractereAbsent> ;
+                                                                              owl:allValuesFrom <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire>
+                                                                            ] ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://purl.org/dc/terms/type> ;
+                                                                              owl:allValuesFrom <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire>
+                                                                            ] ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://rdf.insee.fr/def/territoire/bpe#caracterePresent> ;
+                                                                              owl:allValuesFrom <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire>
+                                                                            ] ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://rdf.insee.fr/def/territoire/bpe#secteurEquipementScolaire> ;
+                                                                              owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                                            ] ;
+                                                            
+                                                            rdfs:isDefinedBy <http://rdf.insee.fr/def/territoire/bpe> .
+
+
+
+###  http://rdf.insee.fr/def/territoire/bpe#EquipementSportLoisir
+
+<http://rdf.insee.fr/def/territoire/bpe#EquipementSportLoisir> rdf:type owl:Class ;
+                                                               
+                                                               rdfs:label "Equipement sport-loisir"@fr ;
+                                                               
+                                                               rdfs:subClassOf <http://rdf.insee.fr/def/territoire/bpe#Equipement> ,
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://rdf.insee.fr/def/territoire/bpe#caracterePresent> ;
+                                                                                 owl:allValuesFrom <http://rdf.insee.fr/def/territoire/bpe#CaractereSportLoisir>
+                                                                               ] ,
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://purl.org/dc/terms/type> ;
+                                                                                 owl:allValuesFrom <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir>
+                                                                               ] ,
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://rdf.insee.fr/def/territoire/bpe#caractereAbsent> ;
+                                                                                 owl:allValuesFrom <http://rdf.insee.fr/def/territoire/bpe#CaractereSportLoisir>
+                                                                               ] ;
+                                                               
+                                                               rdfs:isDefinedBy <http://rdf.insee.fr/def/territoire/bpe> .
+
+
+
+###  http://rdf.insee.fr/def/territoire/bpe#Secteur
+
+<http://rdf.insee.fr/def/territoire/bpe#Secteur> rdf:type owl:Class ;
+                                                 
+                                                 rdfs:label "Secteur"@fr ;
+                                                 
+                                                 rdfs:subClassOf skos:Concept ;
+                                                 
+                                                 rdfs:isDefinedBy <http://rdf.insee.fr/def/territoire/bpe> .
+
+
+
+###  http://rdf.insee.fr/def/territoire/bpe#TypeEquipement
+
+<http://rdf.insee.fr/def/territoire/bpe#TypeEquipement> rdf:type owl:Class ;
+                                                        
+                                                        rdfs:label "Type d'équipement"@fr ;
+                                                        
+                                                        rdfs:subClassOf skos:Concept ;
+                                                        
+                                                        rdfs:isDefinedBy <http://rdf.insee.fr/def/territoire/bpe> .
+
+
+
+###  http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire
+
+<http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> rdf:type owl:Class ;
+                                                                
+                                                                rdfs:label "Type d'équipement scolaire"@fr ;
+                                                                
+                                                                rdfs:subClassOf <http://rdf.insee.fr/def/territoire/bpe#TypeEquipement> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://rdf.insee.fr/def/territoire/bpe#caractereApplicable> ;
+                                                                                  owl:allValuesFrom <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire>
+                                                                                ] ;
+                                                                
+                                                                rdfs:isDefinedBy <http://rdf.insee.fr/def/territoire/bpe> .
+
+
+
+###  http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir
+
+<http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> rdf:type owl:Class ;
+                                                                   
+                                                                   rdfs:label "Type d'équipement sport-loisir"@fr ;
+                                                                   
+                                                                   rdfs:subClassOf <http://rdf.insee.fr/def/territoire/bpe#TypeEquipement> ,
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <http://rdf.insee.fr/def/territoire/bpe#caractereApplicable> ;
+                                                                                     owl:allValuesFrom <http://rdf.insee.fr/def/territoire/bpe#CaractereSportLoisir>
+                                                                                   ] ;
+                                                                   
+                                                                   rdfs:isDefinedBy <http://rdf.insee.fr/def/territoire/bpe> .
+
+
+
+###  http://rdfs.org/ns/void#Dataset
+
+<http://rdfs.org/ns/void#Dataset> rdf:type owl:Class ;
+                                  
+                                  rdfs:label "Jeu de données"@fr .
+
+
+
+###  http://data.datalocale.fr/org#Activite
+
+:Activite rdf:type owl:Class ;
+          
+          rdfs:label "Activité"@fr ;
+          
+          rdfs:subClassOf skos:Concept ;
+          
+          rdfs:comment "Activité de sport ou de loisir, pratiquée dans un équipement"@fr .
+
+
+
+###  http://data.datalocale.fr/org#Administration
+
+:Administration rdf:type owl:Class ;
+                
+                rdfs:label "Administration"@fr ;
+                
+                rdfs:subClassOf <http://xmlns.com/foaf/0.1/Organization> .
+
+
+
+###  http://data.datalocale.fr/org#College
+
+:College rdf:type owl:Class ;
+         
+         rdfs:label "Collège"@fr ;
+         
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.org/dc/terms/type> ;
+                               owl:hasValue <http://id.insee.fr/codes/territoire/TypeEquipement/C201>
+                             ] ;
+         
+         rdfs:subClassOf <http://rdf.insee.fr/def/territoire/bpe#EquipementScolaire> ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :UAI ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] .
+
+
+
+###  http://data.datalocale.fr/org#CollegePrive
+
+:CollegePrive rdf:type owl:Class ;
+              
+              rdfs:label "Collège privé"@fr ;
+              
+              rdfs:subClassOf :College ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://rdf.insee.fr/def/territoire/bpe#secteurEquipementScolaire> ;
+                                owl:hasValue <http://id.insee.fr/codes/territoire/Secteur/Prive>
+                              ] .
+
+
+###  http://data.datalocale.fr/org#CollegePublic
+
+:CollegePublic rdf:type owl:Class ;
+               
+               rdfs:label "Collège public"@fr ;
+               
+               rdfs:subClassOf :College ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://rdf.insee.fr/def/territoire/bpe#secteurEquipementScolaire> ;
+                                 owl:hasValue <http://id.insee.fr/codes/territoire/Secteur/Public>
+                               ] .
+
+
+
+###  http://data.datalocale.fr/org#ConseilGeneral
+
+:ConseilGeneral rdf:type owl:Class ;
+                
+                rdfs:label "Conseil Général"@fr ;
+                
+                rdfs:subClassOf :Administration .
+
+
+
+###  http://data.datalocale.fr/org#DataReference
+
+:DataReference rdf:type owl:Class ;
+               
+               rdfs:label "Référence de données"@fr .
+
+
+
+###  http://data.datalocale.fr/org#Direction
+
+:Direction rdf:type owl:Class ;
+           
+           rdfs:subClassOf :Administration .
+
+
+
+###  http://data.datalocale.fr/org#Effectif
+
+:Effectif rdf:type owl:Class ;
+          
+          rdfs:label "Effectif"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EntiteTransport
+
+:EntiteTransport rdf:type owl:Class ;
+                 
+                 rdfs:label "Entité Transport"@fr .
+
+
+
+###  http://data.datalocale.fr/org#Ligne
+
+:Ligne rdf:type owl:Class ;
+       
+       rdfs:label "Ligne de transport"@fr ;
+       
+       rdfs:subClassOf :EntiteTransport .
+
+
+
+###  http://data.datalocale.fr/org#SEGPA
+
+:SEGPA rdf:type owl:Class ;
+       
+       rdfs:subClassOf <http://rdf.insee.fr/def/territoire/bpe#EquipementScolaire> .
+
+
+
+###  http://data.datalocale.fr/org#TypeEffectif
+
+:TypeEffectif rdf:type owl:Class ;
+              
+              rdfs:label "Type d'effectif"@fr ;
+              
+              rdfs:subClassOf skos:Concept .
+
+
+
+###  http://vocab.org/transit/terms/Agency
+
+<http://vocab.org/transit/terms/Agency> rdf:type owl:Class ;
+                                        
+                                        rdfs:label "Compagnie de transport"@fr ;
+                                        
+                                        rdfs:subClassOf <http://xmlns.com/foaf/0.1/Organization> ;
+                                        
+                                        rdfs:comment "An organization that oversees public transportation for a city or region."@en ;
+                                        
+                                        rdfs:isDefinedBy <http://vocab.org/transit/terms/> .
+
+
+
+###  http://vocab.org/transit/terms/Route
+
+<http://vocab.org/transit/terms/Route> rdf:type owl:Class ;
+                                       
+                                       rdfs:label "Trajet"@fr ;
+                                       
+                                       rdfs:subClassOf :EntiteTransport ;
+                                       
+                                       rdfs:comment "A public transportation route."@en ;
+                                       
+                                       rdfs:isDefinedBy <http://vocab.org/transit/terms/> .
+
+
+
+###  http://vocab.org/transit/terms/Service
+
+<http://vocab.org/transit/terms/Service> rdf:type owl:Class ;
+                                         
+                                         rdfs:label "Service"@fr ;
+                                         
+                                         rdfs:subClassOf :EntiteTransport ;
+                                         
+                                         rdfs:comment "A public transport service that operates a route on a given schedule."@en ;
+                                         
+                                         rdfs:isDefinedBy <http://vocab.org/transit/terms/> .
+
+
+
+###  http://vocab.org/transit/terms/Stop
+
+<http://vocab.org/transit/terms/Stop> rdf:type owl:Class ;
+                                      
+                                      rdfs:label "Arrêt"@fr ;
+                                      
+                                      rdfs:subClassOf :EntiteTransport ,
+                                                      <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+                                      
+                                      rdfs:comment "A location where passengers board or disembark from a transit vehicle."@en ;
+                                      
+                                      rdfs:isDefinedBy <http://vocab.org/transit/terms/> .
+
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
+
+rdf:Property rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/2002/07/owl#Class
+
+owl:Class rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+
+owl:Thing rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
+
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> rdf:type owl:Class ;
+                                                       
+                                                       rdfs:label "Entité spatiale"@fr .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+
+skos:Concept rdf:type owl:Class ;
+             
+             rdfs:label "Concept"@fr .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+
+skos:ConceptScheme rdf:type owl:Class ;
+                   
+                   rdfs:label "Structure de concepts"@fr .
+
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class ;
+                                  
+                                  rdfs:label "Agent"@fr .
+
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+
+<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class ;
+                                         
+                                         rdfs:label "Organisation"@fr ;
+                                         
+                                         rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> .
+
+
+
+###  http://xmlns.com/foaf/0.1/Person
+
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   
+                                   rdfs:label "Personne"@fr ;
+                                   
+                                   rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://data.datalocale.fr/RefDataTransports2012
+
+<http://data.datalocale.fr/RefDataTransports2012> rdf:type :DataReference ,
+                                                           owl:NamedIndividual ;
+                                                  
+                                                  rdfs:label "Référence données transports 2012"@fr ;
+                                                  
+                                                  :referenceDate "2012" ;
+                                                  
+                                                  :referenceData <http://data.datalocale.fr/TransportsScolaires-2012-2013.rdf> ;
+                                                  
+                                                  :referent <http://ref.datalocale.fr/org#DTT> ;
+                                                  
+                                                  :referenceClass :EntiteTransport .
+
+
+
+###  http://data.datalocale.fr/TransportsScolaires-2012-2013.rdf
+
+<http://data.datalocale.fr/TransportsScolaires-2012-2013.rdf> rdf:type owl:NamedIndividual .
+
+
+
+###  http://id.insee.fr/codes/territoire/CaractereEquipement/CANT
+
+<http://id.insee.fr/codes/territoire/CaractereEquipement/CANT> rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> ,
+                                                                        owl:NamedIndividual ,
+                                                                        skos:Concept ;
+                                                               
+                                                               skos:notation "CANT" ;
+                                                               
+                                                               skos:prefLabel "Cantine"@fr ;
+                                                               
+                                                               skos:inScheme <http://id.insee.fr/codes/territoire/CaractereEquipement/CaractereEquipementScolaire> .
+
+
+
+###  http://id.insee.fr/codes/territoire/CaractereEquipement/CL_ELEM
+
+<http://id.insee.fr/codes/territoire/CaractereEquipement/CL_ELEM> rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> ,
+                                                                           owl:NamedIndividual ,
+                                                                           skos:Concept ;
+                                                                  
+                                                                  skos:notation "CL_ELEM" ;
+                                                                  
+                                                                  skos:prefLabel "Classe élémentaire en maternelle"@fr ;
+                                                                  
+                                                                  skos:inScheme <http://id.insee.fr/codes/territoire/CaractereEquipement/CaractereEquipementScolaire> .
+
+
+
+###  http://id.insee.fr/codes/territoire/CaractereEquipement/CL_PELEM
+
+<http://id.insee.fr/codes/territoire/CaractereEquipement/CL_PELEM> rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> ,
+                                                                            owl:NamedIndividual ,
+                                                                            skos:Concept ;
+                                                                   
+                                                                   skos:notation "CL_PELEM" ;
+                                                                   
+                                                                   skos:prefLabel "Classe pré-élémentaire en école élémentaire"@fr ;
+                                                                   
+                                                                   skos:inScheme <http://id.insee.fr/codes/territoire/CaractereEquipement/CaractereEquipementScolaire> .
+
+
+
+###  http://id.insee.fr/codes/territoire/CaractereEquipement/CL_PGE
+
+<http://id.insee.fr/codes/territoire/CaractereEquipement/CL_PGE> rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> ,
+                                                                          owl:NamedIndividual ,
+                                                                          skos:Concept ;
+                                                                 
+                                                                 skos:notation "CL_PGE" ;
+                                                                 
+                                                                 skos:prefLabel "Classe préparatoire aux grandes écoles en lycée"@fr ;
+                                                                 
+                                                                 skos:inScheme <http://id.insee.fr/codes/territoire/CaractereEquipement/CaractereEquipementScolaire> .
+
+
+
+###  http://id.insee.fr/codes/territoire/CaractereEquipement/COUVERT
+
+<http://id.insee.fr/codes/territoire/CaractereEquipement/COUVERT> rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereSportLoisir> ,
+                                                                           owl:NamedIndividual ,
+                                                                           skos:Concept ;
+                                                                  
+                                                                  skos:notation "COUVERT" ;
+                                                                  
+                                                                  skos:prefLabel "Couvert"@fr ;
+                                                                  
+                                                                  skos:inScheme <http://id.insee.fr/codes/territoire/CaractereEquipement/CaractereEquipementSportLoisir> .
+
+
+
+###  http://id.insee.fr/codes/territoire/CaractereEquipement/CaractereEquipementScolaire
+
+<http://id.insee.fr/codes/territoire/CaractereEquipement/CaractereEquipementScolaire> rdf:type owl:NamedIndividual ,
+                                                                                               skos:Concept ;
+                                                                                      
+                                                                                      rdfs:label "Caractère d'équipement scolaire"@fr .
+
+
+
+###  http://id.insee.fr/codes/territoire/CaractereEquipement/CaractereEquipementSportLoisir
+
+<http://id.insee.fr/codes/territoire/CaractereEquipement/CaractereEquipementSportLoisir> rdf:type owl:NamedIndividual ,
+                                                                                                  skos:Concept ;
+                                                                                         
+                                                                                         rdfs:label "Caractère d'équipement sport-loisir"@fr .
+
+
+
+###  http://id.insee.fr/codes/territoire/CaractereEquipement/ECLAIRE
+
+<http://id.insee.fr/codes/territoire/CaractereEquipement/ECLAIRE> rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereSportLoisir> ,
+                                                                           owl:NamedIndividual ,
+                                                                           skos:Concept ;
+                                                                  
+                                                                  skos:notation "ECLAIRE" ;
+                                                                  
+                                                                  skos:prefLabel "Eclairé"@fr ;
+                                                                  
+                                                                  skos:inScheme <http://id.insee.fr/codes/territoire/CaractereEquipement/CaractereEquipementSportLoisir> .
+
+
+
+###  http://id.insee.fr/codes/territoire/CaractereEquipement/INT
+
+<http://id.insee.fr/codes/territoire/CaractereEquipement/INT> rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> ,
+                                                                       owl:NamedIndividual ,
+                                                                       skos:Concept ;
+                                                              
+                                                              skos:notation "INT" ;
+                                                              
+                                                              skos:prefLabel "Internat"@fr ;
+                                                              
+                                                              skos:inScheme <http://id.insee.fr/codes/territoire/CaractereEquipement/CaractereEquipementScolaire> .
+
+
+
+###  http://id.insee.fr/codes/territoire/CaractereEquipement/REP
+
+<http://id.insee.fr/codes/territoire/CaractereEquipement/REP> rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> ,
+                                                                       owl:NamedIndividual ,
+                                                                       skos:Concept ;
+                                                              
+                                                              skos:notation "REP" ;
+                                                              
+                                                              skos:prefLabel "Réseau d'éducation prioritaire"@fr ;
+                                                              
+                                                              skos:inScheme <http://id.insee.fr/codes/territoire/CaractereEquipement/CaractereEquipementScolaire> .
+
+
+
+###  http://id.insee.fr/codes/territoire/CaractereEquipement/RPIC
+
+<http://id.insee.fr/codes/territoire/CaractereEquipement/RPIC> rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> ,
+                                                                        owl:NamedIndividual ,
+                                                                        skos:Concept ;
+                                                               
+                                                               skos:notation "RPIC" ;
+                                                               
+                                                               skos:prefLabel "Regroupement pédagogique intercommunal concentré"@fr ;
+                                                               
+                                                               skos:inScheme <http://id.insee.fr/codes/territoire/CaractereEquipement/CaractereEquipementScolaire> .
+
+
+
+###  http://id.insee.fr/codes/territoire/Secteur/Prive
+
+<http://id.insee.fr/codes/territoire/Secteur/Prive> rdf:type <http://rdf.insee.fr/def/territoire/bpe#Secteur> ,
+                                                             owl:NamedIndividual ;
+                                                    
+                                                    skos:prefLabel "Secteur privé"@fr .
+
+
+
+###  http://id.insee.fr/codes/territoire/Secteur/Public
+
+<http://id.insee.fr/codes/territoire/Secteur/Public> rdf:type <http://rdf.insee.fr/def/territoire/bpe#Secteur> ,
+                                                              owl:NamedIndividual ;
+                                                     
+                                                     skos:prefLabel "Secteur public"@fr .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C101
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C101> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C101" ;
+                                                          
+                                                          skos:prefLabel "École maternelle"@fr ;
+                                                          
+                                                          <http://rdf.insee.fr/def/territoire/bpe#caractereApplicable> <http://id.insee.fr/codes/territoire/CaractereEquipement/CANT> ,
+                                                                                                                       <http://id.insee.fr/codes/territoire/CaractereEquipement/CL_ELEM> ,
+                                                                                                                       <http://id.insee.fr/codes/territoire/CaractereEquipement/REP> ,
+                                                                                                                       <http://id.insee.fr/codes/territoire/CaractereEquipement/RPIC> ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C101/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C102
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C102> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C102" ;
+                                                          
+                                                          skos:prefLabel "Classe maternelle de regroupement pédagogique intercommunal (RPI) dispersé"@fr ;
+                                                          
+                                                          <http://rdf.insee.fr/def/territoire/bpe#caractereApplicable> <http://id.insee.fr/codes/territoire/CaractereEquipement/CANT> ,
+                                                                                                                       <http://id.insee.fr/codes/territoire/CaractereEquipement/CL_ELEM> ,
+                                                                                                                       <http://id.insee.fr/codes/territoire/CaractereEquipement/REP> ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C102/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C104
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C104> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C104" ;
+                                                          
+                                                          skos:prefLabel "École élémentaire"@fr ;
+                                                          
+                                                          <http://rdf.insee.fr/def/territoire/bpe#caractereApplicable> <http://id.insee.fr/codes/territoire/CaractereEquipement/CANT> ,
+                                                                                                                       <http://id.insee.fr/codes/territoire/CaractereEquipement/CL_PELEM> ,
+                                                                                                                       <http://id.insee.fr/codes/territoire/CaractereEquipement/REP> ,
+                                                                                                                       <http://id.insee.fr/codes/territoire/CaractereEquipement/RPIC> ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C104/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C105
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C105> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C105" ;
+                                                          
+                                                          skos:prefLabel "Classe élémentaire de regroupement pédagogique intercommunal (RPI) dispersé"@fr ;
+                                                          
+                                                          <http://rdf.insee.fr/def/territoire/bpe#caractereApplicable> <http://id.insee.fr/codes/territoire/CaractereEquipement/CANT> ,
+                                                                                                                       <http://id.insee.fr/codes/territoire/CaractereEquipement/CL_PELEM> ,
+                                                                                                                       <http://id.insee.fr/codes/territoire/CaractereEquipement/REP> ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C105/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C201
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C201> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C201" ;
+                                                          
+                                                          skos:prefLabel "Collège"@fr ;
+                                                          
+                                                          <http://rdf.insee.fr/def/territoire/bpe#caractereApplicable> <http://id.insee.fr/codes/territoire/CaractereEquipement/INT> ,
+                                                                                                                       <http://id.insee.fr/codes/territoire/CaractereEquipement/REP> ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C201/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C203
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C203> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C203" ;
+                                                          
+                                                          skos:prefLabel "SET : Section d'enseignement technologique"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C203/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C301
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C301> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C301" ;
+                                                          
+                                                          skos:prefLabel "Lycée d'enseignement général et/ou technologique"@fr ;
+                                                          
+                                                          <http://rdf.insee.fr/def/territoire/bpe#caractereApplicable> <http://id.insee.fr/codes/territoire/CaractereEquipement/CL_PGE> ,
+                                                                                                                       <http://id.insee.fr/codes/territoire/CaractereEquipement/INT> ,
+                                                                                                                       <http://id.insee.fr/codes/territoire/CaractereEquipement/REP> ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C301/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C302
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C302> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C302" ;
+                                                          
+                                                          skos:prefLabel "Lycée d'enseignement professionnel"@fr ;
+                                                          
+                                                          <http://rdf.insee.fr/def/territoire/bpe#caractereApplicable> <http://id.insee.fr/codes/territoire/CaractereEquipement/CL_PGE> ,
+                                                                                                                       <http://id.insee.fr/codes/territoire/CaractereEquipement/INT> ,
+                                                                                                                       <http://id.insee.fr/codes/territoire/CaractereEquipement/REP> ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C302/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C303
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C303> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C303" ;
+                                                          
+                                                          skos:prefLabel "Lycée d'enseignement technique et/ou professionnel agricole"@fr ;
+                                                          
+                                                          <http://rdf.insee.fr/def/territoire/bpe#caractereApplicable> <http://id.insee.fr/codes/territoire/CaractereEquipement/CL_PGE> ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C303/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C304
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C304> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C304" ;
+                                                          
+                                                          skos:prefLabel "SGT : Section d'enseignement général et technologique"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C304/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C305
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C305> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C305" ;
+                                                          
+                                                          skos:prefLabel "SEP : Section d'enseignement professionnel"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C305/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C401
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C401> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C401" ;
+                                                          
+                                                          skos:prefLabel "STS CPGE"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C401/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C402
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C402> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C402" ;
+                                                          
+                                                          skos:prefLabel "Formation santé"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C402/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C403
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C403> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C403" ;
+                                                          
+                                                          skos:prefLabel "Formation commerce"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C403/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C409
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C409> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C409" ;
+                                                          
+                                                          skos:prefLabel "Autre formation post bac non universitaire"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C409/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C501
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C501> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C501" ;
+                                                          
+                                                          skos:prefLabel "UFR"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C501/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C502
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C502> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C502" ;
+                                                          
+                                                          skos:prefLabel "Institut universitaire"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C502/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C503
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C503> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C503" ;
+                                                          
+                                                          skos:prefLabel "École d'ingénieurs"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C503/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C504
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C504> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C504" ;
+                                                          
+                                                          skos:prefLabel "Enseignement général supérieur privé"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C504/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C509
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C509> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:prefLabel "Autre enseignement supérieur"@fr ;
+                                                          
+                                                          skos:notation "C509" ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C509/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C601
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C601> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C601" ;
+                                                          
+                                                          skos:prefLabel "Centre de formation d'apprentis (hors agriculture)"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C601/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C602
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C602> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C602" ;
+                                                          
+                                                          skos:prefLabel "GRETA"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C602/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C603
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C603> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C603" ;
+                                                          
+                                                          skos:prefLabel "Formation professionnelle continue agricole"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C603/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C604
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C604> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C604" ;
+                                                          
+                                                          skos:prefLabel "Formation aux métiers du sport"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C604/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C605
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C605> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C605" ;
+                                                          
+                                                          skos:prefLabel "Centre formation d'apprentis agricole"@fr ;
+                                                          
+                                                          <http://rdf.insee.fr/def/territoire/bpe#caractereApplicable> <http://id.insee.fr/codes/territoire/CaractereEquipement/INT> ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C605/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C609
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C609> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C609" ;
+                                                          
+                                                          skos:prefLabel "Autre formation continue"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/C609/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C701
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C701> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C701" ;
+                                                          
+                                                          skos:prefLabel "Résidence universitaire"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C702
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C702> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementScolaire> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "C702" ;
+                                                          
+                                                          skos:prefLabel "Restaurant universitaire"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F101
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F101> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:prefLabel "Bassin de natation"@fr ;
+                                                          
+                                                          skos:notation "F101" ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F101/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F102
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F102> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "F102" ;
+                                                          
+                                                          skos:prefLabel "Boulodrome"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F102/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F103
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F103> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "F103" ;
+                                                          
+                                                          skos:prefLabel "Tennis"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F103/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F104
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F104> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "F104" ;
+                                                          
+                                                          skos:prefLabel "Équipement de cyclisme"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F104/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F105
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F105> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "F105" ;
+                                                          
+                                                          skos:prefLabel "Domaine skiable"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F105/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F106
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F106> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:prefLabel "Centre équestre"@fr ;
+                                                          
+                                                          skos:notation "F106" ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F106/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F107
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F107> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:prefLabel "Athlétisme"@fr ;
+                                                          
+                                                          skos:notation "F107" ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F107/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F108
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F108> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "F108" ;
+                                                          
+                                                          skos:prefLabel "Terrain de golf"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F108/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F109
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F109> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "F109" ;
+                                                          
+                                                          skos:prefLabel "Parcours sportif"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F109/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F110
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F110> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "F110" ;
+                                                          
+                                                          skos:prefLabel "Sports de glace"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F110/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F111
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F111> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "F111" ;
+                                                          
+                                                          skos:prefLabel "Plateau extérieur ou salle multisports"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F111/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F112
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F112> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "F112" ;
+                                                          
+                                                          skos:prefLabel "Salle ou terrain de petits jeux"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F112/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F113
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F113> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "F113" ;
+                                                          
+                                                          skos:prefLabel "Terrain de grands jeux"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F113/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F114
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F114> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "F114" ;
+                                                          
+                                                          skos:prefLabel "Salle de combat"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F114/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F115
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F115> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "F115" ;
+                                                          
+                                                          skos:prefLabel "Salle ou terrain spécialisé"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F115/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F116
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F116> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "F116" ;
+                                                          
+                                                          skos:prefLabel "Salle non spécialisée"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F116/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F117
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F117> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "F117" ;
+                                                          
+                                                          skos:prefLabel "Roller-Skate-Vélo bicross ou freestyle"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F117/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F118
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F118> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "F118" ;
+                                                          
+                                                          skos:prefLabel "Sports nautiques"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F118/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F201
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F201> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "F201" ;
+                                                          
+                                                          skos:prefLabel "Baignade aménagée"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F201/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F202
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F202> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "F202" ;
+                                                          
+                                                          skos:prefLabel "Port de plaisance - Mouillage"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F202/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F203
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F203> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:prefLabel "Boucle de randonnée"@fr ;
+                                                          
+                                                          skos:notation "F203" ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> ,
+                                                                    <http://id.insee.fr/codes/territoire/TypeEquipement/F203/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F301
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F301> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "F301" ;
+                                                          
+                                                          skos:prefLabel "Cinéma"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F301/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F302
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F302> rdf:type <http://rdf.insee.fr/def/territoire/bpe#TypeEquipementSportLoisir> ,
+                                                                   owl:NamedIndividual ,
+                                                                   skos:Concept ;
+                                                          
+                                                          skos:notation "F302" ;
+                                                          
+                                                          skos:prefLabel "Théâtre"@fr ;
+                                                          
+                                                          skos:inScheme <http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> ;
+                                                          
+                                                          skos:note <http://id.insee.fr/codes/territoire/TypeEquipement/F302/note> .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementScolaire> rdf:type owl:NamedIndividual ,
+                                                                                     skos:Concept ;
+                                                                            
+                                                                            rdfs:label "Type d'équipement scolaire"@fr .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/TypeEquipementSportLoisir> rdf:type owl:NamedIndividual ,
+                                                                                        skos:Concept ;
+                                                                               
+                                                                               rdfs:label "Type d'équipement sport-loisir"@fr .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C101/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C101/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "École assurant tous les niveaux de maternelle. Y compris annexe d'IUFM, maternelle d'application et spécialisée. Y compris écoles en regroupement pédagogique intercommunal (RPI) concentré (soit toutes les classes regroupées), non compris classes de RPI dispersés (cf. C102)." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C102/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C102/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Tous les niveaux de maternelle ne sont pas assurés dans l'établissement." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C104/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C104/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "École assurant tous les niveaux d'école élémentaire. Y compris annexe d'IUFM, élémentaire d'application, spécialisée ou régionale. Y compris écoles en regroupement pédagogique intercommunal (RPI) concentré (soit toutes les classes regroupées), non compris classes de RPI dispersés (cf. C105)." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C105/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C105/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Tous les niveaux d'école élémentaire ne sont pas assurés dans l'établissement." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C201/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C201/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Y compris collège climatique ou spécialisé." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C203/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C203/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Présence d'enseignement technologique au sein d'un collège." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C301/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C301/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Y compris lycée polyvalent ou climatique et école secondaire spécialisée. Hors tutelle du ministère de l'Agriculture." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C302/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C302/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Y compris école de métiers et école professionnelle spécialisée. Hors tutelle du ministère de l'Agriculture." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C303/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C303/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Sous tutelle du ministère de l'Agriculture. Y compris maison rurale et autre enseignement agricole privé." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C304/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C304/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Présence d'enseignement général et technologique au sein d'un lycée professionnel." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C305/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C305/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Présence d'enseignement professionnel au sein d'un lycée d'enseignement général et/ou technologique." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C401/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C401/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Seules formations au diplôme de technicien supérieur et classes préparatoires aux grandes écoles." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C402/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C402/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Écoles de formation sanitaire et sociale (y compris établissements sous tutelle du ministère de la Santé) publiques ou privées : formation de personnels médicaux et paramédicaux, techniques (laborantins), sanitaires (aides-soignants, ambulanciers), sociaux (service social, éducateurs...)." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C403/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C403/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Écoles de commerce, gestion, administration d'entreprises, comptabilité, vente. Comprend notamment les réseaux d'écoles des CCI." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C409/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C409/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Écoles de formation d'enseignants non IUFM, d'administration publique (y compris de fonctionnaires), technico-professionnelles des services, de formation artistique, d'architecture, de formation agricole ou halieutique, technico-professionnelles industrielles, juridiques." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C501/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C501/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Y compris UFR de médecine, odontologie, pharmacie. Y compris antennes délocalisées des UFR ou autres composantes." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C502/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C502/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "IUP, IUT y compris antennes délocalisées, IUFM y compris antennes d'IUFM." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C503/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C503/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Écoles d'ingénieurs publiques sous tutelle du ministère de l'Enseignement Supérieur et de la Recherche ou d'un autre ministère, et écoles privées." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C504/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C504/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Établissements privés d'enseignement universitaire, centres ou facultés privés, instituts catholiques." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C509/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C509/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Écoles normales supérieures, instituts nationaux polytechniques, instituts d'administration des entreprises, instituts de préparation à l'administration générale, instituts d'études politiques, institut du travail, centres régionaux associés aux Cnam, université de technologie et centre universitaire de formation et recherche." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C601/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C601/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Centre de formation d'apprentis avec convention régionale ou nationale, y compris antennes et sections d'apprentissage, non compris l'apprentissage agricole. Modifié à compter de 2009 : ne comprend plus les CFA agricoles reclassés en C605." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C602/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C602/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Groupements d'établissements pour la formation continue. Les annexes de Greta ne sont pas immatriculées. Ils sont toujours rattachés à un EPLE (Établissement public local d'enseignement)." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C603/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C603/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Centre de formation professionnelle et de promotion agricole ou de formation continue agricole [toujours rattaché à un EPLE (Établissement public local d'enseignement) agricole]. Changement de la source à compter de 2009." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C604/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C604/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Établissements de formation aux métiers du sport : écoles et instituts nationaux de la jeunesse et des sports (Insep, INJEP, ENSA, ENEV, ENSFS, ENE), centres d'éducation populaire et de sport (Creps). Ils sont sous la tutelle du ministère de la Jeunesse et des Sports." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C605/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C605/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Centre de formation d'apprentis agricole. Créé à compter de 2009 : les CFA agricoles sont séparés des autres classés en C601." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/C609/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/C609/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Établissements de formation continue autres : regroupe les centres d'enseignement à distance (Cned et ses centres d'enseignement, centres privés soumis à déclaration), les établissements de formation continue hors Éducation nationale." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F101-203/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                            owl:NamedIndividual ;
+                                                                   
+                                                                   <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                                   
+                                                                   <http://eurovoc.europa.eu/schema#noteLiteral> "Ne sont pris en compte que les installations accessibles à tout public, à titre individuel ou via une structure publique ou privée (associative ou commerciale), pour y pratiquer une activité physique et/ou sportive." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F101/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F101/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Bassin de natation, sportive et/ou ludique. Pour chaque équipement, nombre de bassins." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F102/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F102/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Terrain de boules, de pétanque. Pour chaque équipement, nombre de terrains." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F103/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F103/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Court(s) de tennis. Pour chaque équipement, nombre de courts." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F104/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F104/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Vélodrome, anneau/piste. Pour chaque équipement, nombre de pistes." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F105/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F105/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Station de ski, domaine nordique. Pour chaque équipement, nombre de pistes." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F106/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F106/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Carrière, manège, carrière de dressage/rond de longe, structure de tourisme équestre. Pour chaque équipement, nombre de carrières, manèges." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F107/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F107/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Stade d'athlétisme, aire de lancer, aire de saut, piste. Pour chaque équipement, nombre d'aires de pratique." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F108/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F108/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Parcours 9 ou 18 trous, parcours d'initiation, practice. Pour chaque équipement, nombre d'aires de pratique." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F109/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F109/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Parcours sportif/santé. Pour chaque équipement, nombre de parcours." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F110/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F110/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Aire de sports de glace, sportive et/ou ludique. Pour chaque équipement, nombre d'aires de pratique." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F111/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F111/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Plateau EPS, multisports, city-stade, salle multisports (gymnase). Pour chaque équipement, nombre d'aires de pratique." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F112/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F112/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Salle ou terrain de basket-ball, de beach-volley, de handball, de volley-ball, de badminton, salle de tennis de table. Pour chaque équipement, nombre d'aires de pratique." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F113/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F113/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Terrain de football, de rugby, de football américain, de jeu à XIII. Pour chaque équipement, nombre de terrains." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F114/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F114/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Dojo, salle de boxe, d'arts martiaux, de lutte, d'escrime. Pour chaque équipement, nombre d'aires de pratique." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F115/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F115/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Salle de culturisme, de danse, de gymnastique sportive, de patinage sur roulette, de raquetball, de trampoline, d'haltérophilie, salle ou terrain de squash, structure artificielle d'escalade. Pour chaque équipement, nombre d'aires de pratique." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F116/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F116/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Salle polyvalente, des fêtes, autre salle non spécialisé. Salle où s'exerce au moins une activité physique et/ou sportive." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F117/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F117/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Anneau de roller, skate-park, piste de bicross, espace de vélo freestyle. Pour chaque équipement, nombre de pistes, parcours, circuits." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F118/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F118/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Site d'activités nautiques, stade de ski nautique et/ou d'aviron. Pour chaque équipement, nombre d'aires de pratique." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F201/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F201/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Site d'activités aquatiques, baignade aménagée. Zone délimitée (matériellement, par des bouées, des lignes d'eau, etc.) pour la baignade surveillée. En rivière, mer, plan d'eau intérieur. Pour chaque équipement, nombre d'aires de pratique." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F202/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F202/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Port de plaisance, zone de mouillage. Pour chaque équipement, nombre de ports, de zones." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F203/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F203/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Uniquement les boucles de randonnée dont les points de départ et d'arrivée se situent sur la même commune (règle du RES). Pour chaque équipement, nombre de circuits." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F301/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F301/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Projection en salle de cinéma, en plein air ou autres. Implantation physique, qu'il y ait une seule salle de projection ou plusieurs au sein d'un complexe. Il n'y a ni le nombre de salles présentes, ni leur nombre de places offertes." .
+
+
+
+###  http://id.insee.fr/codes/territoire/TypeEquipement/F302/note
+
+<http://id.insee.fr/codes/territoire/TypeEquipement/F302/note> rdf:type <http://purl.org/ontology/bibo/Note> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://eurovoc.europa.eu/schema#noteLiteral> "Ensemble des lieux gérés par le Centre National du Théâtre (CNT) où une représentation de théâtre peut se tenir. Ces lieux peuvent être labellisés (théâtres nationaux et privés, scènes nationales et conventionnées, compagnies avec lieux d'accueil, compagnies dramatiques nationales et régionales, pôles cirque, centres chorégraphiques) ou non." ;
+                                                               
+                                                               <http://purl.org/dc/elements/1.1/language> "fr" .
+
+
+
+###  http://ref.datalocale.fr/org#DTT
+
+<http://ref.datalocale.fr/org#DTT> rdf:type :Direction ,
+                                            owl:NamedIndividual ;
+                                   
+                                   skos:prefLabel "Direction des Transports Terrestres"@fr .
+
+
+
+###  http://data.datalocale.fr/org#CaractereCuisine
+
+:CaractereCuisine rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> ,
+                           owl:NamedIndividual ;
+                  
+                  skos:prefLabel "Cuisine"@fr ;
+                  
+                  skos:narrower :CaractereCuisineAUTOG ,
+                                :CaractereCuisineAUTRE ,
+                                :CaractereCuisineCONV-EPLE .
+
+
+
+###  http://data.datalocale.fr/org#CaractereCuisineAUTOG
+
+:CaractereCuisineAUTOG rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> ,
+                                owl:NamedIndividual ;
+                       
+                       skos:prefLabel "Cuisine autogérée"@fr ;
+                       
+                       skos:broader :CaractereCuisine ;
+                       
+                       skos:narrower :CaractereCuisineAUTOG-UPC .
+
+
+
+###  http://data.datalocale.fr/org#CaractereCuisineAUTOG-UPC
+
+:CaractereCuisineAUTOG-UPC rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> ,
+                                    owl:NamedIndividual ;
+                           
+                           skos:prefLabel "Cuisine autogérée UPC"@fr ;
+                           
+                           skos:broader :CaractereCuisineAUTOG .
+
+
+
+###  http://data.datalocale.fr/org#CaractereCuisineAUTRE
+
+:CaractereCuisineAUTRE rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> ,
+                                owl:NamedIndividual ;
+                       
+                       skos:prefLabel "Cuisine autre"@fr ;
+                       
+                       skos:broader :CaractereCuisine .
+
+
+
+###  http://data.datalocale.fr/org#CaractereCuisineCONV-EPLE
+
+:CaractereCuisineCONV-EPLE rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> ,
+                                    owl:NamedIndividual ;
+                           
+                           skos:prefLabel "Cuisine convention EPLE"@fr ;
+                           
+                           skos:broader :CaractereCuisine .
+
+
+
+###  http://data.datalocale.fr/org#CaractereDP
+
+:CaractereDP rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> ,
+                      owl:NamedIndividual ;
+             
+             skos:prefLabel "Sans internat avec demi-pension"@fr .
+
+
+
+###  http://data.datalocale.fr/org#CaractereEnsSpe
+
+:CaractereEnsSpe rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> ,
+                          owl:NamedIndividual ;
+                 
+                 skos:prefLabel "Enseignement spécialisé"@fr .
+
+
+
+###  http://data.datalocale.fr/org#CaractereSEGPA
+
+:CaractereSEGPA rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> ,
+                         owl:NamedIndividual ;
+                
+                skos:prefLabel "SEGPA"@fr .
+
+
+
+###  http://data.datalocale.fr/org#CaractereSectionEuro
+
+:CaractereSectionEuro rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> ,
+                               owl:NamedIndividual ;
+                      
+                      skos:prefLabel "Section européenne"@fr .
+
+
+
+###  http://data.datalocale.fr/org#CaractereSectionInter
+
+:CaractereSectionInter rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> ,
+                                owl:NamedIndividual ;
+                       
+                       skos:prefLabel "Section internationale"@fr .
+
+
+
+###  http://data.datalocale.fr/org#CaractereSectionTechno
+
+:CaractereSectionTechno rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> ,
+                                 owl:NamedIndividual ;
+                        
+                        skos:prefLabel "Section technologique"@fr .
+
+
+
+###  http://data.datalocale.fr/org#CaractereUPI
+
+:CaractereUPI rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereScolaire> ,
+                       owl:NamedIndividual ;
+              
+              skos:prefLabel "UPI"@fr ;
+              
+              skos:altLabel "Unité Pédagogique d'Intégration"@fr .
+
+
+
+###  http://data.datalocale.fr/org#CarctereAccesMobiliteReduite
+
+:CarctereAccesMobiliteReduite rdf:type <http://rdf.insee.fr/def/territoire/bpe#CaractereSportLoisir> ,
+                                       owl:NamedIndividual ;
+                              
+                              rdfs:label "Accès mobilité réduite"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifBoursiersCG
+
+:EffectifBoursiersCG rdf:type :TypeEffectif ,
+                              owl:NamedIndividual ;
+                     
+                     skos:prefLabel "Effectif boursiers CG"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifBoursiersEtat
+
+:EffectifBoursiersEtat rdf:type :TypeEffectif ,
+                                owl:NamedIndividual ;
+                       
+                       skos:prefLabel "Effectif boursiers d'Etat"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifCINQUIEME
+
+:EffectifCINQUIEME rdf:type :TypeEffectif ,
+                            owl:NamedIndividual ;
+                   
+                   skos:prefLabel "Effectif cinquième"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifCINQUIEME-SEGPA
+
+:EffectifCINQUIEME-SEGPA rdf:type :TypeEffectif ,
+                                  owl:NamedIndividual ;
+                         
+                         skos:prefLabel "Effectif cinquième SEGPA"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifDP
+
+:EffectifDP rdf:type :TypeEffectif ,
+                     owl:NamedIndividual ;
+            
+            skos:prefLabel "Effectif demi-pensionnaires"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifEXT
+
+:EffectifEXT rdf:type :TypeEffectif ,
+                      owl:NamedIndividual ;
+             
+             skos:prefLabel "Effectif externes"@fr ,
+                            "Effectif externes surveillés"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifEnsSpe
+
+:EffectifEnsSpe rdf:type :TypeEffectif ,
+                         owl:NamedIndividual ;
+                
+                skos:prefLabel "Effectif enseignement spécialisé"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifINT
+
+:EffectifINT rdf:type :TypeEffectif ,
+                      owl:NamedIndividual ;
+             
+             skos:prefLabel "Effectif internes"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifInternes
+
+:EffectifInternes rdf:type owl:NamedIndividual ;
+                  
+                  skos:prefLabel "Effectif internes-externes"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifQUATRIEME
+
+:EffectifQUATRIEME rdf:type :TypeEffectif ,
+                            owl:NamedIndividual ;
+                   
+                   skos:prefLabel "Effectif quatrième"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifQUATRIEME-SEGPA
+
+:EffectifQUATRIEME-SEGPA rdf:type :TypeEffectif ,
+                                  owl:NamedIndividual ;
+                         
+                         skos:prefLabel "Effectif quatrième SEGPA"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifSIXIEME
+
+:EffectifSIXIEME rdf:type :TypeEffectif ,
+                          owl:NamedIndividual ;
+                 
+                 skos:prefLabel "Effectif sixième"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifSIXIEME-SEGPA
+
+:EffectifSIXIEME-SEGPA rdf:type :TypeEffectif ,
+                                owl:NamedIndividual ;
+                       
+                       skos:prefLabel "Effectif sixième SEGPA"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifSectionEuro
+
+:EffectifSectionEuro rdf:type :TypeEffectif ,
+                              owl:NamedIndividual ;
+                     
+                     skos:prefLabel "Effectif section européenne"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifSectionInter
+
+:EffectifSectionInter rdf:type :TypeEffectif ,
+                               owl:NamedIndividual ;
+                      
+                      skos:prefLabel "Effectif section internationale"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifTOTAL
+
+:EffectifTOTAL rdf:type :TypeEffectif ,
+                        owl:NamedIndividual ;
+               
+               skos:prefLabel "Effectif total général"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifTOTAL-ENS-GEN
+
+:EffectifTOTAL-ENS-GEN rdf:type :TypeEffectif ,
+                                owl:NamedIndividual ;
+                       
+                       skos:prefLabel "Effectif total enseignement général"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifTOTAL-HORS-SEGPA
+
+:EffectifTOTAL-HORS-SEGPA rdf:type :TypeEffectif ,
+                                   owl:NamedIndividual ;
+                          
+                          skos:prefLabel "Effectif total hors SEGPA"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifTOTAL-SEGPA
+
+:EffectifTOTAL-SEGPA rdf:type :TypeEffectif ,
+                              owl:NamedIndividual ;
+                     
+                     skos:prefLabel "Effectif total SEGPA"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifTROISIEME
+
+:EffectifTROISIEME rdf:type :TypeEffectif ,
+                            owl:NamedIndividual ;
+                   
+                   skos:prefLabel "Effectif troisième"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifTROISIEME-INSERTION
+
+:EffectifTROISIEME-INSERTION rdf:type :TypeEffectif ,
+                                      owl:NamedIndividual ;
+                             
+                             skos:prefLabel "Effectif troisième d'insertion"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifTROISIEME-SEGPA
+
+:EffectifTROISIEME-SEGPA rdf:type :TypeEffectif ,
+                                  owl:NamedIndividual ;
+                         
+                         skos:prefLabel "Effectif troisième SEGPA"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifTechno
+
+:EffectifTechno rdf:type :TypeEffectif ,
+                         owl:NamedIndividual ;
+                
+                skos:prefLabel "Effectif enseignement technologique"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifTroisiemeInsertion
+
+:EffectifTroisiemeInsertion rdf:type :TypeEffectif ,
+                                     owl:NamedIndividual ;
+                            
+                            skos:prefLabel "Effectif troisième d'insertion"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EffectifUPI
+
+:EffectifUPI rdf:type :TypeEffectif ,
+                      owl:NamedIndividual ;
+             
+             skos:prefLabel "Effectif UPI"@fr .
+
+
+
+###  http://data.datalocale.fr/org#EntiteTransport
+
+:EntiteTransport rdf:type owl:NamedIndividual ;
+                 
+                 rdfs:label "Entité Transport"@fr .
+
+
+
+
+### Ajouts pour la version 1.2. ###
+
+###  http://data.datalocale.fr/org#equipementSportifEquivalent
+
+:equipementSportifEquivalent rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "equipement sportif"@fr ;
+                   
+                   rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#EquipementScolaire>;
+				   
+				   owl:inverseOf  :equipementScolaireEquivalent ;
+                   
+                   rdfs:range <http://rdf.insee.fr/def/territoire/bpe#Equipement> .
+				   
+				   
+				   
+###  http://data.datalocale.fr/org#equipementScolaireEquivalent
+
+:equipementScolaireEquivalent rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "equipement scolaire"@fr ;
+                   
+                   rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#Equipement> ;
+				   
+				   owl:inverseOf  :equipementSportifEquivalent ;
+                   
+                   rdfs:range <http://rdf.insee.fr/def/territoire/bpe#EquipementScolaire> .
+
+
+###  http://data.datalocale.fr/org#arretProche
+
+:arretProche rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "arrêt proche"@fr ;
+                   
+                   rdfs:domain <http://rdf.insee.fr/def/territoire/bpe#Equipement> ;
+				   
+				   owl:inverseOf  :equipementDesservi ;
+                   
+                   rdfs:range <http://vocab.org/transit/terms/Stop> .
+				   
+				   
+###  http://data.datalocale.fr/org#equipementDesservi
+
+:equipementDesservi rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "équipement desservi"@fr ;
+                   
+                   rdfs:domain <http://vocab.org/transit/terms/Stop> ;
+				   
+				   owl:inverseOf  :arretProche ;
+                   
+                   rdfs:range <http://rdf.insee.fr/def/territoire/bpe#Equipement>  .
+				   
+
+###  http://data.datalocale.fr/org#heureDepart
+
+:heureDepart rdf:type owl:DatatypeProperty ,
+              owl:FunctionalProperty ;
+     
+             rdfs:label "heure de départ"@fr ;
+			 
+			 rdfs:domain <http://vocab.org/transit/terms/Service> .
+			 
+
+###  http://data.datalocale.fr/org#heureArrivee
+
+:heureArrivee rdf:type owl:DatatypeProperty ,
+              owl:FunctionalProperty ;
+     
+             rdfs:label "heure d'arrivée"@fr ;
+			 
+			 rdfs:domain <http://vocab.org/transit/terms/Service> .
+			 
+### 
+			 
