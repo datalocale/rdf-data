@@ -20,18 +20,18 @@ Ce dépôt contient :
 - l'export des données chargées dans l'entrepôt RDF sesame utilisé pour l'expérimentation
   - Référentiel cantons et communes du 33, avec leurs identifiants INSEE, récupérés de la publication RDF de l'INSEE. 
   - Fichiers .ttl obtenus par transformation des fichiers CSV d'origine via transformation en XML puis XLST :
-  COLLEGES
-    liste-colleges.ttl : liste des collèges avec coordonnées, libellés, localisation
-    infra-colleges.ttl : description des collèges en tant qu'infrastructures
-    effectifs-colleges.ttl : description des effectifs
-  EQUIPEMENTS
-    equipements.ttl : base d'équipements du département (indépendants des collèges)
-    equipements-wgs84.ttl : localisation des équipements en WGS 84
-  TRANSPORTS (représentés avec l'ontologie Transit)
-    lignes.ttl : lignes de bus
-    arrets.ttl : arrêts de bus
-    trajets.ttl : trajets de bus
-    services.ttl : services de bus
-    colleges-arrets-bus-only.rdf
+    - COLLEGES
+      - liste-colleges.ttl : liste des collèges avec coordonnées, libellés, localisation
+      - infra-colleges.ttl : description des collèges en tant qu'infrastructures
+      - effectifs-colleges.ttl : description des effectifs
+    - EQUIPEMENTS
+      - equipements.ttl : base d'équipements du département (indépendants des collèges)
+      - equipements-wgs84.ttl : localisation des équipements en WGS 84
+    - TRANSPORTS (représentés avec l'ontologie Transit)
+      - lignes.ttl : lignes de bus
+      - arrets.ttl : arrêts de bus
+      - trajets.ttl : trajets de bus
+      - services.ttl : services de bus
+      - colleges-arrets-bus-only.rdf
 
 L'ensemble de ces contenu est publié sous licence CC-By-SA
