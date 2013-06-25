@@ -1,0 +1,106 @@
+<rdf:RDF
+    xmlns:org="http://data.datalocale.fr/org#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> 
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0330008E">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-10047"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0331754C">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-10149"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0332569N">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-10764"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0332248P">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-10367"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0332982M">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-10528"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0330103H">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-11978"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0333134C">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-20062"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0332246M">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-12560"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0332190B">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-10326"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0331524C">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-13153"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0332657J">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-10542"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0332704K">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-10034"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0332706M">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-12952"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0333213N">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-20988"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0330100E">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-12957"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0332085M">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-11214"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0331664E">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-13312"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0330084M">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-10402"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0331757F">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-12635"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0332743C">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-10639"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0330125G">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-12725"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0330059K">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-12954"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0331621H">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-12958"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0331618E">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-20100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0332723F">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-10773"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0332340P">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-12806"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0331890A">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-10100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0331528G">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-10574"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0331419N">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-15843"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0332090T">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-21181"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0332187Y">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-12333"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0330058J">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-12741"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0331620G">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-12760"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.datalocale.fr/equipement/College-0330105K">
+    <org:arretProche rdf:resource="http://data.datalocale.fr/equipement/Arret-TRANSGIRONDE-11993"/>
+  </rdf:Description>
+</rdf:RDF>
